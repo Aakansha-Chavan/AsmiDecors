@@ -1,0 +1,12 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="error-container">
+        <div class="error-icon">
+            &#9888;
+        </div>
+        <h1>Error <%= statusCode %></h1>
+        <p><%= message %></p>
+        <a href="/" class="home-link">
+            Go to Home
+        </a>
+</div>

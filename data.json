@@ -1,0 +1,479 @@
+[
+  {
+    "title": "Blue Pillar Makhar",
+    "description": "Elegant blue pillar makhar for a divine setup.",
+    "sizes": [
+      { "size": "3ft", "price": 4000 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/blue-pillar-makhar.jpg",
+    "tags": ["traditional", "pillar", "blue"]
+  },
+  {
+    "title": "Diya Backdrop",
+    "description": "A beautiful backdrop adorned with diyas for a radiant look.",
+    "sizes": [
+      { "size": "2ft", "price": 2500 },
+      { "size": "3ft", "price": 3700 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/diya-backdrop.jpeg",
+    "tags": ["lighting", "traditional", "backdrop"]
+  },
+  {
+    "title": "Green Backdrop",
+    "description": "Simple yet serene green backdrop for various decorations.",
+    "sizes": [
+      { "size": "3ft", "price": 3700 },
+      { "size": "4ft", "price": 4700 }
+    ],
+    "imageUrl": "/images/green-backdrop.jpeg",
+    "tags": ["green", "simple", "backdrop"]
+  },
+  {
+    "title": "Peacock Feather Makhar",
+    "description": "Intricate peacock feather themed makhar for an artistic touch.",
+    "sizes": [
+      { "size": "2ft", "price": 2500 },
+      { "size": "3ft", "price": 3800 },
+      { "size": "4ft", "price": 4900 }
+    ],
+    "imageUrl": "/images/peacock-feather-makhar.jpeg",
+    "tags": ["peacock", "feather", "traditional"]
+  },
+  {
+    "title": "Yellow Mirror Backdrop",
+    "description": "Vibrant yellow backdrop with mirror work for a reflective charm.",
+    "sizes": [
+      { "size": "3ft", "price": 3000 },
+      { "size": "4ft", "price": 4200 }
+    ],
+    "imageUrl": "/images/yellow-mirror-backdrop.jpeg",
+    "tags": ["yellow", "mirror", "backdrop"]
+  },
+  {
+    "title": "Crystal Pillar Design",
+    "description": "Stunning crystal pillar design to add sparkle to your decor.",
+    "sizes": [
+      { "size": "2ft", "price": 2000 },
+      { "size": "3ft", "price": 3500 },
+      { "size": "4ft", "price": 4900 }
+    ],
+    "imageUrl": "/images/crystal-pillar-design.jpeg",
+    "tags": ["crystal", "pillar", "modern"]
+  },
+  {
+    "title": "Zhula with Diya Backdrop",
+    "description": "A swing (zhula) design with integrated diya backdrop for elegance.",
+    "sizes": [
+      { "size": "3ft", "price": 4900 },
+      { "size": "4ft", "price": 6000 }
+    ],
+    "imageUrl": "/images/zhula-diya-backdrop.jpeg",
+    "tags": ["zhula", "diya", "swing", "unique"]
+  },
+  {
+    "title": "Crystal Ring Design",
+    "description": "Circular crystal ring design creating a captivating focal point.",
+    "sizes": [
+      { "size": "2ft", "price": 3300 },
+      { "size": "3ft", "price": 4500 }
+    ],
+    "imageUrl": "/images/crystal-ring-design.jpeg",
+    "tags": ["crystal", "ring", "modern"]
+  },
+  {
+    "title": "Peacock Decoration",
+    "description": "Beautiful peacock-themed decoration for a grand display.",
+    "sizes": [
+      { "size": "3ft", "price": 4800 },
+      { "size": "4ft", "price": 5900 }
+    ],
+    "imageUrl": "/images/peacock-decoration.jpg",
+    "tags": ["peacock", "grand", "traditional"]
+  },
+  {
+    "title": "Mahalaxmi Backdrop",
+    "description": "A sacred Mahalaxmi themed backdrop for spiritual ambiance.",
+    "sizes": [
+      { "size": "3ft", "price": 3700 },
+      { "size": "4ft", "price": 4900 }
+    ],
+    "imageUrl": "/images/mahalaxmi-backdrop.jpg",
+    "tags": ["mahalaxmi", "spiritual", "backdrop"]
+  },
+  {
+    "title": "Golden Patch Work Design",
+    "description": "Intricate golden patch work design adding richness to the decor.",
+    "sizes": [
+      { "size": "2ft", "price": 2000 },
+      { "size": "3ft", "price": 3300 }
+    ],
+    "imageUrl": "/images/golden-patch-work-design.jpeg",
+    "tags": ["golden", "patchwork", "traditional"]
+  },
+  {
+    "title": "Lotus Petal Design",
+    "description": "Delicate lotus petal design for a serene and natural look.",
+    "sizes": [
+      { "size": "2ft", "price": 2700 },
+      { "size": "3ft", "price": 3800 }
+    ],
+    "imageUrl": "/images/lotus-petal-design.jpeg",
+    "tags": ["lotus", "floral", "elegant"]
+  },
+  {
+    "title": "Lighting Backdrop",
+    "description": "A simple backdrop illuminated with charming lights.",
+    "sizes": [
+      { "size": "2ft", "price": 1800 },
+      { "size": "3ft", "price": 2500 },
+      { "size": "4ft", "price": 3500 }
+    ],
+    "imageUrl": "/images/lighting-backdrop.jpeg",
+    "tags": ["lights", "simple", "backdrop"]
+  },
+  {
+    "title": "Tricolor Backdrop",
+    "description": "A patriotic tricolor themed backdrop, perfect for special occasions.",
+    "sizes": [
+      { "size": "3ft", "price": 3800 },
+      { "size": "4ft", "price": 5200 }
+    ],
+    "imageUrl": "/images/tricolor-backdrop.jpg",
+    "tags": ["tricolor", "patriotic", "backdrop"]
+  },
+  {
+    "title": "Shree Backdrop",
+    "description": "A sacred 'Shree' symbol backdrop for a blessed atmosphere.",
+    "sizes": [
+      { "size": "2ft", "price": 2500 },
+      { "size": "3ft", "price": 3500 },
+      { "size": "4ft", "price": 4500 }
+    ],
+    "imageUrl": "/images/shree-backdrop.jpg",
+    "tags": ["shree", "spiritual", "backdrop"]
+  },
+  {
+    "title": "Lotus Bud Backdrop",
+    "description": "Charming lotus bud themed backdrop, symbolizing purity.",
+    "sizes": [
+      { "size": "2ft", "price": 1800 },
+      { "size": "3ft", "price": 2700 },
+      { "size": "4ft", "price": 3900 }
+    ],
+    "imageUrl": "/images/lotus-bud-backdrop.jpg",
+    "tags": ["lotus", "floral", "backdrop"]
+  },
+  {
+    "title": "White Pillars Design",
+    "description": "Classic white pillars design for a grand and elegant entrance.",
+    "sizes": [
+      { "size": "3ft", "price": 2500 },
+      { "size": "4ft", "price": 3300 }
+    ],
+    "imageUrl": "/images/white-pillars-design.jpg",
+    "tags": ["white", "pillar", "classic"]
+  },
+  {
+    "title": "Pink Flower Backdrop",
+    "description": "Lovely pink flower backdrop creating a festive and colorful setting.",
+    "sizes": [
+      { "size": "2ft", "price": 2000 },
+      { "size": "3ft", "price": 3800 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/pink-flower-backdrop.jpg",
+    "tags": ["pink", "floral", "backdrop"]
+  },
+  {
+    "title": "Yellow n Orange Circle",
+    "description": "Vibrant yellow and orange circular backdrop for a cheerful ambiance.",
+    "sizes": [
+      { "size": "2ft", "price": 2000 },
+      { "size": "3ft", "price": 3800 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/yellow-orange-circle.jpg",
+    "tags": ["yellow", "orange", "circular", "vibrant"]
+  },
+  {
+    "title": "White n Golden Design",
+    "description": "Sophisticated white and golden design adding luxury to your decor.",
+    "sizes": [
+      { "size": "3ft", "price": 4000 },
+      { "size": "4ft", "price": 5500 }
+    ],
+    "imageUrl": "/images/white-golden-design.jpg",
+    "tags": ["white", "golden", "luxurious", "elegant"]
+  },
+  {
+    "title": "Red n Brown Backdrop",
+    "description": "Warm red and brown backdrop creating a cozy and inviting atmosphere.",
+    "sizes": [
+      { "size": "3ft", "price": 4500 },
+      { "size": "4ft", "price": 6000 }
+    ],
+    "imageUrl": "/images/red-brown-backdrop.jpg",
+    "tags": ["red", "brown", "warm", "backdrop"]
+  },
+  {
+    "title": "Yellow Mirror Work",
+    "description": "Bright yellow backdrop with intricate mirror work details.",
+    "sizes": [
+      { "size": "3ft", "price": 3800 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/yellow-mirror-work.jpg",
+    "tags": ["yellow", "mirror", "traditional"]
+  },
+  {
+    "title": "Crystal with Pearl Ring",
+    "description": "Exquisite crystal and pearl ring design for a sparkling display.",
+    "sizes": [
+      { "size": "2ft", "price": 3700 },
+      { "size": "3ft", "price": 4800 }
+    ],
+    "imageUrl": "/images/crystal-pearl-ring.jpg",
+    "tags": ["crystal", "pearl", "elegant", "ring"]
+  },
+  {
+    "title": "Vithu Mauli Design",
+    "description": "A traditional Vithu Mauli themed decoration.",
+    "sizes": [
+      { "size": "2ft", "price": 1800 },
+      { "size": "3ft", "price": 2500 },
+      { "size": "4ft", "price": 3500 }
+    ],
+    "imageUrl": "/images/vithu-mauli-design.jpg",
+    "tags": ["vithu-mauli", "traditional", "spiritual"]
+  },
+  {
+    "title": "Saraswati Design",
+    "description": "Goddess Saraswati inspired decoration, ideal for auspicious events.",
+    "sizes": [
+      { "size": "2ft", "price": 1800 },
+      { "size": "3ft", "price": 2500 },
+      { "size": "4ft", "price": 3500 }
+    ],
+    "imageUrl": "/images/saraswati-design.jpg",
+    "tags": ["saraswati", "spiritual", "traditional"]
+  },
+  {
+    "title": "Saraswati with Diya Backdrop",
+    "description": "Saraswati backdrop enhanced with illuminating diyas.",
+    "sizes": [
+      { "size": "2ft", "price": 1500 },
+      { "size": "3ft", "price": 2400 },
+      { "size": "4ft", "price": 3500 }
+    ],
+    "imageUrl": "/images/saraswati-diya-backdrop.jpg",
+    "tags": ["saraswati", "diya", "lighting", "spiritual"]
+  },
+  {
+    "title": "Yellow Arc Backdrop",
+    "description": "A vibrant yellow arc backdrop for a cheerful celebration.",
+    "sizes": [
+      { "size": "2ft", "price": 2000 },
+      { "size": "3ft", "price": 3500 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/yellow-arc-backdrop.jpg",
+    "tags": ["yellow", "arc", "backdrop", "vibrant"]
+  },
+  {
+    "title": "Nath Design Backdrop",
+    "description": "Elegant Nath (nose ring) inspired design backdrop.",
+    "sizes": [
+      { "size": "3ft", "price": 3800 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/nath-design-backdrop.jpg",
+    "tags": ["nath", "traditional", "backdrop"]
+  },
+  {
+    "title": "Om Backdrop",
+    "description": "A serene Om symbol backdrop for a peaceful environment.",
+    "sizes": [
+      { "size": "2ft", "price": 2300 },
+      { "size": "3ft", "price": 3700 },
+      { "size": "4ft", "price": 5500 }
+    ],
+    "imageUrl": "/images/om-backdrop.jpg",
+    "tags": ["om", "spiritual", "backdrop"]
+  },
+  {
+    "title": "Purple with Yellow Backdrop",
+    "description": "A striking purple and yellow combination backdrop for a festive look.",
+    "sizes": [
+      { "size": "3ft", "price": 4000 },
+      { "size": "4ft", "price": 5500 }
+    ],
+    "imageUrl": "/images/purple-yellow-backdrop.jpg",
+    "tags": ["purple", "yellow", "colorful", "backdrop"]
+  },
+  {
+    "title": "Half Circle with Pillar",
+    "description": "A unique half-circle design integrated with elegant pillars.",
+    "sizes": [
+      { "size": "3ft", "price": 4000 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/half-circle-pillar.jpg",
+    "tags": ["circular", "pillar", "unique"]
+  },
+  {
+    "title": "Shiv Backdrop",
+    "description": "A sacred Shiv themed backdrop for spiritual gatherings.",
+    "sizes": [
+      { "size": "3ft", "price": 3000 },
+      { "size": "4ft", "price": 4000 }
+    ],
+    "imageUrl": "/images/shiv-backdrop.jpg",
+    "tags": ["shiv", "spiritual", "backdrop"]
+  },
+  {
+    "title": "Yellow Pillars Design",
+    "description": "Bright yellow pillars design to add a cheerful touch to your decor.",
+    "sizes": [
+      { "size": "3ft", "price": 4000 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/yellow-pillars-design.jpg",
+    "tags": ["yellow", "pillar", "bright"]
+  },
+  {
+    "title": "Pink Backdrop",
+    "description": "Simple and elegant pink backdrop for a soft, inviting ambiance.",
+    "sizes": [
+      { "size": "3ft", "price": 3800 },
+      { "size": "4ft", "price": 4900 }
+    ],
+    "imageUrl": "/images/pink-backdrop.jpg",
+    "tags": ["pink", "backdrop", "simple"]
+  },
+  {
+    "title": "Tree Decoration",
+    "description": "A natural-themed tree decoration, bringing an organic feel.",
+    "sizes": [
+      { "size": "3ft", "price": 3000 },
+      { "size": "4ft", "price": 4000 }
+    ],
+    "imageUrl": "/images/tree-decoration.jpg",
+    "tags": ["tree", "nature", "organic"]
+  },
+  {
+    "title": "White Backdrop with Multicolor Flowers",
+    "description": "A serene white backdrop adorned with vibrant multicolor flowers.",
+    "sizes": [
+      { "size": "2ft", "price": 2200 },
+      { "size": "3ft", "price": 3700 },
+      { "size": "4ft", "price": 4500 }
+    ],
+    "imageUrl": "/images/white-multicolor-flowers-backdrop.jpg",
+    "tags": ["white", "floral", "multicolor", "backdrop"]
+  },
+  {
+    "title": "Lipan Art Backdrop",
+    "description": "Traditional Lipan Art inspired backdrop, showcasing cultural beauty.",
+    "sizes": [
+      { "size": "3ft", "price": 4000 },
+      { "size": "4ft", "price": 5000 }
+    ],
+    "imageUrl": "/images/lipan-art-backdrop.jpg",
+    "tags": ["lipan-art", "traditional", "cultural"]
+  },
+  {
+    "title": "White n Pink Backdrop",
+    "description": "Charming white and pink backdrop for a soft and delicate look.",
+    "sizes": [
+      { "size": "3ft", "price": 4500 },
+      { "size": "4ft", "price": 5500 }
+    ],
+    "imageUrl": "/images/white-pink-backdrop.jpg",
+    "tags": ["white", "pink", "soft", "backdrop"]
+  },
+  {
+    "title": "Yellow Designer Backdrop",
+    "description": "A stylish yellow designer backdrop for a contemporary setting.",
+    "sizes": [
+      { "size": "3ft", "price": 3000 },
+      { "size": "4ft", "price": 4000 }
+    ],
+    "imageUrl": "/images/yellow-designer-backdrop.jpg",
+    "tags": ["yellow", "designer", "modern", "backdrop"]
+  },
+  {
+    "title": "Temple Design",
+    "description": "An elaborate temple-inspired design, perfect for sacred spaces.",
+    "sizes": [
+      { "size": "2ft", "price": 2700 },
+      { "size": "3ft", "price": 3800 },
+      { "size": "4ft", "price": 4900 }
+    ],
+    "imageUrl": "/images/temple-design.jpg",
+    "tags": ["temple", "sacred", "traditional"]
+  },
+  {
+    "title": "Green Pillars with Curtain Design",
+    "description": "Graceful green pillars complemented by elegant curtain designs.",
+    "sizes": [
+      { "size": "3ft", "price": 3000 },
+      { "size": "4ft", "price": 4000 }
+    ],
+    "imageUrl": "/images/green-pillars-curtain-design.jpg",
+    "tags": ["green", "pillar", "curtain", "elegant"]
+  },
+  {
+    "title": "Lotus",
+    "description": "Simple yet beautiful lotus decoration, symbolizing purity and growth.",
+    "sizes": [
+      { "size": "2ft", "price": 800 },
+      { "size": "3ft", "price": 1500 }
+    ],
+    "imageUrl": "/images/lotus.jpg",
+    "tags": ["lotus", "floral", "simple"]
+  },
+  {
+    "title": "Pearl Decoration",
+    "description": "Dazzling pearl decoration for a luxurious and elegant ambiance.",
+    "sizes": [
+      { "size": "2ft", "price": 2800 },
+      { "size": "3ft", "price": 4000 },
+      { "size": "4ft", "price": 5500 }
+    ],
+    "imageUrl": "/images/pearl-decoration.jpeg",
+    "tags": ["pearl", "luxury", "elegant"]
+  },
+  {
+    "title": "Sihasan",
+    "description": "A traditional Sihasan (throne) for the idol, available in various sizes.",
+    "sizes": [
+      { "size": "2ft", "price": 1800 },
+      { "size": "3ft", "price": 2500 },
+      { "size": "4ft", "price": 4000 }
+    ],
+    "imageUrl": "/images/sihasan.jpeg",
+    "tags": ["sihasan", "throne", "traditional"]
+  },
+  {
+    "title": "Yellow Backdrop",
+    "description": "A vibrant yellow backdrop to brighten up any festive setting.",
+    "sizes": [
+      { "size": "3ft", "price": 3000 },
+      { "size": "4ft", "price": 4000 }
+    ],
+    "imageUrl": "/images/yellow-backdrop.jpg",
+    "tags": ["yellow", "backdrop", "vibrant"]
+  },
+  {
+    "title": "Stone Work Sihasan",
+    "description": "Sihasan with intricate stone work details for a rich appearance.",
+    "sizes": [
+      { "size": "2ft", "price": 1800 },
+      { "size": "3ft", "price": 2500 }
+    ],
+    "imageUrl": "/images/stone-work-sihasan.jpeg",
+    "tags": ["sihasan", "stone-work", "traditional", "artisan"]
+  }
+]
