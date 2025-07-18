@@ -38,43 +38,43 @@ async function main() {
 }
 
 
+// --- Root route redirects to /home ---
+app.get('/', (req, res) => {
+    res.render('products/index.ejs');
+});
+
+// --- Ignore favicon requests ---
+// Browsers automatically request this, and it can cause 404 errors in the log if not handled.
+// Sending a 204 No Content response is a clean way to handle it.
+app.get('/favicon.ico', (req, res) => res.sendStatus(204));
 
 
-app.get('/',(req,res)=>{
-    res.render("products/index.ejs");
-})
 
 // --- Route to display decorations ---
 app.get('/decorations', catchAsync(async (req, res) => {
-    try {
-        const alldecorations = await Decoration.find(); // Fetch all decorations from DB
-        console.log(alldecorations);
-        res.render("products/products.ejs",{alldecorations})
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Server Error');
-    }
+    const alldecorations = await Decoration.find(); // Fetch all decorations from DB
+    console.log(alldecorations);
+    res.render("products/products.ejs", { alldecorations });
 }));
 
-app.get('/decorations/:id', async (req, res) => {
-    let {id}=req.params;
+app.get('/decorations/:id', catchAsync(async (req, res, next) => {
+    const { id } = req.params;
     // Check if ID is a valid MongoDB ObjectId format
     if (!mongoose.Types.ObjectId.isValid(id)) {
-        // If not a valid ObjectId, throw a 404 error
-        throw new ExpressError('Invalid Decoration ID', 404);
+        // If not a valid ObjectId, pass a 404 error to the error handler
+        return next(new ExpressError('Invalid Decoration ID', 404));
     }
 
-
-    let decoration=await Decoration.findById(id);
+    const decoration = await Decoration.findById(id);
 
     // If decoration is not found, throw a 404 error
     if (!decoration) {
-        throw new ExpressError('Decoration Not Found', 404);
+        return next(new ExpressError('Decoration Not Found', 404));
     }
 
     console.log(decoration);
-    res.render("products/show.ejs",{decoration:decoration,whatsappNumber: WHATSAPP_NUMBER});
-})
+    res.render("products/show.ejs", { decoration: decoration, whatsappNumber: WHATSAPP_NUMBER });
+}));
 
 
 app.get('/about',(req,res)=>{
@@ -102,4 +102,3 @@ app.use((err, req, res, next) => {
 app.listen(port,()=>{
     console.log(`Listening on port ${port}`);
 })
-
