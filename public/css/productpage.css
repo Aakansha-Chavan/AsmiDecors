@@ -1,0 +1,66 @@
+/* Cards */
+.listing-card {
+     border: none; /* Remove default Bootstrap border */
+    border-radius: 15px; /* Softer rounded corners for the whole card */
+    overflow: hidden; /* Ensures content respects border-radius */
+    margin-bottom: 2rem; /* Spacing between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.listing-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    /* Updated box-shadow for hover with the specified color and intensity */
+    box-shadow: 0 15px 40px rgba(235, 140, 7, 0.77); 
+}
+
+.listing-card .card-img-top {
+    height: 20rem; /* As defined in your EJS or remove style attribute there */
+    width: 100%; /* Ensure image takes full width of its container */
+    object-fit: cover; /* Crop image to fit while maintaining aspect ratio */
+    border-top-left-radius: 15px; /* Match card radius for top corners */
+    border-top-right-radius: 15px; /* Match card radius for top corners */
+}
+
+.listing-card .card-body {
+    padding: 1rem; /* Adjust padding if needed */
+    text-align: center; /* Center the title text */
+}
+
+.listing-card .card-text b {
+    font-size: 1.3rem; /* Larger font size for the title */
+    color: #a05f2c; /* Specific color for the title */
+    font-weight: 600; /* Slightly bolder */
+}
+
+
+
+.decoration-link {
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: #aaa;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #a05f2c;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}

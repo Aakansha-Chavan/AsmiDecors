@@ -12,7 +12,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
 <link rel="icon" href="/images/asmi_decors.jpg" type="image/png">
-    <title>AsmiDecors</title>
+    <title><%= typeof title !== 'undefined' ? title : 'Ganpati Decorations' %></title>
+    <% if (typeof pageCSS !== 'undefined' && pageCSS.length > 0) { %>
+        <% pageCSS.forEach(function(cssFile) { %>
+            <link rel="stylesheet" href="/css/<%= cssFile %>.css">
+        <% }); %>
+    <% } %>
+
 </head>
 <body>
     <%- include("../includes/navbar.ejs") %>
@@ -25,6 +31,10 @@
     <%- include("../includes/footer.ejs") %>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
+    <% if (typeof pageJS !== 'undefined' && pageJS.length > 0) { %>
+        <% pageJS.forEach(function(jsFile) { %>
+            <script src="/js/<%= jsFile %>.js"></script>
+        <% }); %>
+    <% } %>
 </body>
 </html>

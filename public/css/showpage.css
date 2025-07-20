@@ -1,0 +1,169 @@
+/* 🌟 Root Theme Colors (Ensure these are defined, perhaps in a global style.css or boilerplate) */
+:root {
+  --primary: #a05f2c;
+  --secondary: #e0b989;
+  --text: #333;
+  --bg: #fff;
+  --accent: #d35400;
+  --success: #27ae60;
+}
+
+body.dark {
+  --text: #f5f5f5;
+  --bg: #1c1c1c;
+}
+
+/* ✅ Base Styles (Ensure these are in your main CSS or boilerplate) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, p {
+  margin: 0;
+  text-align: center; /* Adjust this if you want left-aligned text within the info panel */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ✅ Product Detail Section */
+.product-detail {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#product-name {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: var(--text);
+  margin-bottom: 40px;
+}
+
+/* ✅ Layout */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 40px; /* Space between image and info panel */
+}
+
+/* ✅ Product Image */
+#product-image {
+  max-width: 450px; /* Max width for the image container */
+  width: 100%; /* Image takes full width of its container */
+  object-fit: contain; /* Prevents cropping, maintains aspect ratio, may show white space */
+  border-radius: 20px; /* Rounded corners for the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Initial shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover */
+}
+
+#product-image:hover {
+  transform: scale(1.02); /* Scale effect on hover */
+  box-shadow: 0 10px 30px rgba(241, 116, 13, 0.66); /* Hover shadow */
+}
+
+/* ✅ Info Panel */
+.product-info {
+  max-width: 350px; /* Max width for the info panel */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between elements inside info panel */
+}
+
+.product-info h2 {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.card-text{
+  color: var(--text);
+  font-size: 1.1rem; /* Adjusted for better visual hierarchy */
+  line-height: 1.6; /* Improves readability for blocks of text */
+  text-align: left; /* Best for paragraphs of text */
+  opacity: 0.9; /* Softens the text slightly */
+}
+
+/* ✅ Size & Price Selection */
+.size-price-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center label, select, and price */
+  gap: 15px; /* Space between elements */
+}
+
+select#size-select { /* Target specific select for styling */
+   width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 2px solid var(--primary);
+  background-color: var(--bg);
+  color: var(--text);
+  transition: border 0.3s;
+  text-align: left; /* Ensure text aligns left in dropdown */
+}
+
+select#size-select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+/* ✅ Price Text */
+#current-price-display {
+  font-size: 1.2rem;
+  color: var(--accent);
+  font-weight: bold;
+  
+}
+
+/* ✅ WhatsApp Button */
+#whatsapp-book-link {
+  display: inline-block; /* Allows padding and width */
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  background-color: var(--success);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(39, 174, 96, 0.5);
+  transition: 0.3s ease;
+}
+
+#whatsapp-book-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(39, 174, 96, 0.7);
+}
+
+
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  #product-name {
+    font-size: 2rem;
+  }
+
+  .product-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items when stacked */
+  }
+
+  #product-image,
+  .product-info {
+    max-width: 100%; /* Take full width on small screens */
+  }
+}

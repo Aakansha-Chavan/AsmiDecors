@@ -1,5 +1,12 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
+<% 
+    title = 'AsmiDecors - Product Details'; // Customize title per page
+    pageCSS = ['showpage']; // Add CSS filenames (without .css)
+    pageJS = ['script']; // Add JS filenames (without .js)
+
+%>
+
 <script>
     // This line defines a JavaScript variable in the browser,
     // using the value passed from the server (app.js)
@@ -8,44 +15,40 @@
 </script>
 
 
-<div class="row mt-3">
-    <div class="col-8 offset-3">
-        <h3><%= decoration.title %></h3>
-    </div>
+<!-- Product Detail Section -->
+<section class="product-detail" data-aos="zoom-in">
+  <h1 id="product-name"><%= decoration.title %></h1>
+  <p class="subtitle" id="product-message">Elegance crafted for the divine presence.</p>
 
-    <div class="card listing-card col-6 offset-3 show-card"  >
-        <img src="<%= decoration.imageUrl %>" class="card-img-top show-img" alt="decoration-image">
-        <div class="card-body">
-            
-            <p class="card-text">
-            <%=decoration.description %></p>
-            
-            <!-- Combined Size and Price Section -->
-            <div class="size-price-selection">
-                <label for="size-select">Select Size:</label>
-                <select id="size-select">
-                    <% decoration.sizes.forEach(function(sizeOption) { %>
-                        <option 
-                            value="<%= sizeOption.price %>" 
-                            data-size-name="<%= sizeOption.size %>">
-                            <%= sizeOption.size %> 
-                        </option>
-                    <% }); %>
-                </select>
-                
-                <!-- Display Area for the Price - Initialized with smallest size price -->
-                <span id="current-price-display">
-                    Rs. <%= decoration.sizes.length > 0 ? decoration.sizes[0].price : 'N/A' %>
-                </span>
-            </div>
+     <div class="product-container">
+        <img id="product-image" src="<%= decoration.imageUrl %>" alt="Product" />
 
-             <hr>
-
-            <!-- Book via WhatsApp Link/Button -->
-            <a href="#" id="whatsapp-book-link">Book via WhatsApp</a>
-            
-        
+        <div class="product-info">
+        <p class="card-text">
+        <%=decoration.description %></p>
+        <div class="size-price-selection">
+            <label for="size-select">Select Size:</label>
+            <select id="size-select">
+                <% decoration.sizes.forEach(function(sizeOption) { %>
+                    <option
+                        value="<%= sizeOption.price %>"
+                        data-size-name="<%= sizeOption.size %>">
+                        <%= sizeOption.size %>
+                    </option>
+                <% }); %>
+            </select>
+            <span id="current-price-display">
+                Rs. <%= decoration.sizes.length > 0 ? decoration.sizes[0].price : 'N/A' %>
+            </span>
         </div>
+        <hr>
+        <a href="#" id="whatsapp-book-link">Book via WhatsApp</a>
     </div>
+     </div>
+</section>
 
-</div>
+    
+
+
+
+

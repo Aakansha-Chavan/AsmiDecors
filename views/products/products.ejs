@@ -1,12 +1,24 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
-<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 ">
+<% 
+    title = 'AsmiDecors - Product Page'; // Customize title per page
+    pageCSS = ['productpage']; // Add CSS filenames (without .css)
+    
+%>
+
+<!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <h1>Our Ganpati Decoration Collection</h1>
+    <p>Bring home divinity with our handcrafted Ganpati decor.</p>
+  </section>
+
+<div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 "   >
         <% for( let decoration of alldecorations ) { %>
           <% if (decoration._id) { %>
               <a href="/decorations/<%= decoration._id %>" class="decoration-link">
             <div class="card col listing-card" >
                 
-              <img src="<%= decoration.imageUrl %>" class="card-img-top" alt="decoration-image" style="height: 20rem;">
+              <img src="<%= decoration.imageUrl %>" class="card-img-top" alt="decoration-image" >
               <div class="card-img-overlay"></div>
               <div class="card-body">
                 <p class="card-text">

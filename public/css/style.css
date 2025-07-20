@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 5.5rem;
 }
 
 .container{
@@ -12,9 +13,25 @@ body{
 /* Navbar */
 
 .navbar{
-    height: 5rem;
-    background-color: #fff;
+    height: 4rem;
+    background: linear-gradient(to right, #a05f2c, #e0b989);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
+
+.navbar-logo {
+    height: 50px;
+    border-radius: 6px;
+}
+
+.navbar .brand-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-left: 12px;
+  color: #fff;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
 
 .fa-compass{
     color: #fe424d;
@@ -22,13 +39,20 @@ body{
 }
 
 .nav-link{
-    color: #222 !important;
+    color: #444 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
 }
 
 /* Footer */
 .f-info-links a{
-    color: #222;
+    color: #eee;
     text-decoration: none;
+    margin: 0 1rem;
 }
 
 .f-info-links a:hover{
@@ -42,53 +66,37 @@ body{
     justify-content: center;
 }
 
-.f-info-socials i {
-    font-size: 1.2rem;
+.f-info-brand p{
+    color: #eee;
+}
+
+.f-info-socials a {
+    font-size: 1.5rem;
     margin-right: 1rem;
+    color: #eee;
+    transition: transform 0.3s ease;
 }
 
 .f-info {
     text-align: center;
-    height: 8rem;
-    background-color: #ebebeb;
+    height: 12rem;
+    background:linear-gradient(to right, #a05f2c, #e0b989);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: space-evenly;
+    align-content: space-evenly;
+    gap:10px;
 }
 
-/* Cards */
-.listing-card {
-    border: none !important;
-    margin-bottom: 2rem;
+.watermark {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.08);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.card-img-top {
-    border-radius: 1rem !important;
-    width: 100% !important;
-    object-fit: cover !important;
-}
-
-.card-body{
-    padding: 0 !important;
-}
-
-.card-text p{
-    font-weight: 400;
-}
-
-.decoration-link {
-    text-decoration: none;
-}
-
-.card-img-overlay{
-    opacity: 0;
-}
-
-.card-img-overlay:hover{
-    opacity: 0.2;
-    background-color: #fff;
-}
 
 /* show page */
 .show-img{
@@ -103,3 +111,4 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+
