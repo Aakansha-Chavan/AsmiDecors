@@ -1,11 +1,92 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
-<% 
-    title = 'AsmiDecors - Home Page'; // Customize title per page
-    pageCSS = ['homepage']; // Add CSS filenames (without .css)
-    
+<%
+    title = 'Asmi Decors - Ganpati Decoration Services'; // Customize title per page 
+    pageCSS = ['index']; // Add CSS filenames (without .css) 
+    pageJS = ['index1']; // Add JS filenames (without .js)
 %>
 
+<div id="preloader">
+  <div class="preloader-content">
+    <img src="/images/loading-ganpati.png" class="ganpati-img" alt="Ganpati Bappa" />
+    <h1 class="brand-glow">Asmi Decors</h1>
+    <p class="tagline">Bringing Divine Beauty to Your Celebration...</p>
 
-<h2>Ganpati Bappa Morya!</h2>
-<a href="/decorations">See decorations</a>
+    <div class="diya-container">
+      <div class="flame"></div>
+      <div class="flame"></div>
+      <div class="flame"></div>
+    </div>
+
+    <div class="loader-text shimmer">Loading...</div>
+  </div>
+</div>
+
+
+  <section class="welcome-section">
+    <h1 class="fade-slide">Welcome to <span class="highlight">Asmi Decors</span></h1>
+    <p class="trip">Ganpati Decoration Services With Elegance and Devotion</p>
+  </section>
+
+  <section class="intro">
+    <div class="intro-left">
+      <div class="swiper intro-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/images/blue-pillar-makhar.jpg" alt="Ganpati Setup 1"/></div>
+          <div class="swiper-slide"><img src="/images/crystal-pearl-ring.jpg" alt="Ganpati Setup 2"/></div>
+          <div class="swiper-slide"><img src="/images/crystal-pillar-design.jpeg" alt="Ganpati Setup 3"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="intro-right">
+      <h2 class="cta-heading">Bring Home Divine Vibes</h2>
+      <p>Make your celebration unforgettable with our handcrafted Ganpati setups.</p>
+      <a href="/decorations" class="cta-btn">See Decorations</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <i class="fas fa-check-circle"></i>
+      <p>Uncompromising Quality</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-award"></i>
+      <p>13 Years Experience</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-shield-alt"></i>
+      <p>100% Guaranteed Service</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-users"></i>
+      <p>Professional Team</p>
+    </div>
+  </section>
+
+  
+  <h2 class="section-title">Newly Launched</h2>
+
+  <section class="decor-card-grid">
+    <div class="decor-card"><img src="/images/green-backdrop.jpeg"/><h3>Elegant Floral</h3></div>
+    <div class="decor-card"><img src="/images/green-pillars-curtain-design.jpg"/><h3>Divine Palace</h3></div>
+    <div class="decor-card"><img src="/images/half-circle-pillar.jpg"/><h3>Eco Theme</h3></div>
+    <div class="decor-card"><img src="/images/lighting-backdrop.jpeg"/><h3>LED Fusion</h3></div>
+    <div class="decor-card"><img src="/images/lipan-art-backdrop.jpg"/><h3>Traditional Mandap</h3></div>
+    <div class="decor-card"><img src="/images/lotus-bud-backdrop.jpg"/><h3>Spiritual Vibes</h3></div>
+    <div class="decor-card"><img src="/images/lotus-petal-design.jpeg"/><h3>Spiritual Vibes</h3></div>
+    <div class="decor-card"><img src="/images/lotus.jpg"/><h3>Spiritual Vibes</h3></div>
+    </section>
+
+  
+
+  <script>
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    setTimeout(() => {
+      preloader.style.opacity = "0";
+      preloader.style.pointerEvents = "none";
+      setTimeout(() => preloader.remove(), 600);
+    }, 2899); // 2 seconds
+  });
+</script>

@@ -1,0 +1,134 @@
+/* Enable smooth scrolling for on-page links */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Inherit root variables from the main stylesheet */
+:root {
+  --primary: #a05f2c;
+  --secondary: #e0b989;
+  --text: #333;
+  --bg: #fff;
+  --accent: #d35400;
+  --success: #27ae60;
+}
+
+/* Main container for the About Us page */
+.about-container {
+  max-width: 800px;
+  margin: 40px auto; /* Center the container with some top/bottom margin */
+  padding: 40px;
+  background-color: var(--bg);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Heading styles */
+.about-container h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+/* Paragraph and List styles for readability */
+.about-container p,
+.about-container li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+  opacity: 0.9;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.about-container ul {
+  list-style-type: '✨'; /* Custom list bullet */
+  padding-left: 30px; /* Indent list */
+}
+
+.about-container li {
+  padding-left: 15px; /* Space between bullet and text */
+}
+
+/* Emphasized text */
+.about-container strong,
+.about-container b {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Dark mode adjustment for contact section */
+body.dark .contact-section {
+    background-color: #2c2c2c; /* A slightly lighter dark shade */
+}
+
+
+.contact-section .bold-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--success);
+  color: #fff !important; /* Override default link color */
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(39, 174, 96, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(39, 174, 96, 0.6);
+  color: #fff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
