@@ -231,7 +231,45 @@
   transform: scaleY(1.1);
 }
 
- 
+/* NAVBAR STYLING (for Bootstrap) */
+.navbar {
+  background: linear-gradient(to right, #a05f2c, #e0b989);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar .navbar-brand .brand-name,
+.navbar .nav-link {
+  color: #fff !important; /* Use !important to override Bootstrap's default link colors */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.navbar .nav-link:hover {
+  color: #f3e40eff !important;
+}
+
+/* Style the Bootstrap hamburger icon */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5) !important;
+}
+
+.navbar-toggler-icon {
+  /* This uses an SVG to create the hamburger lines, with a white color */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Style the mobile dropdown menu */
+@media (max-width: 991.98px) { /* Matches Bootstrap's 'lg' breakpoint */
+  .navbar-collapse {
+    background: linear-gradient(to right, #a05f2c, #e0b989);
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+}
 
 /* HAMBURGER */
 .hamburger {
@@ -268,9 +306,11 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background: #a05f2c;
+    background-color: #a05f2c;
     padding: 20px 0;
     display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+    z-index: 1000; /* Ensure it's on top of page content */
   }
   .nav-right.show {
     display: flex;
@@ -436,5 +476,3 @@
   from { width: 0; }
   to { width: 100%; }
 }
-
-
