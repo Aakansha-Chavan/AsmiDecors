@@ -41,7 +41,7 @@ async function main() {
 // --- Root route redirects to /home ---
 app.get('/',catchAsync( async(req, res) => {
     const alldecorations = await Decoration.find(); // Fetch all decorations from DB
-    console.log(alldecorations);
+    
     res.render('products/index.ejs',{ alldecorations });
 }));
 
