@@ -65,18 +65,24 @@
   </section>
 
   
-  <h2 class="section-title">Newly Launched</h2>
+  <h2 class="section-title">Our Collection</h2>
 
   <section class="decor-card-grid">
-    <div class="decor-card"><img src="/images/green-backdrop.jpeg"/><h3>Elegant Floral</h3></div>
-    <div class="decor-card"><img src="/images/green-pillars-curtain-design.jpg"/><h3>Divine Palace</h3></div>
-    <div class="decor-card"><img src="/images/half-circle-pillar.jpg"/><h3>Eco Theme</h3></div>
-    <div class="decor-card"><img src="/images/lighting-backdrop.jpeg"/><h3>LED Fusion</h3></div>
-    <div class="decor-card"><img src="/images/lipan-art-backdrop.jpg"/><h3>Traditional Mandap</h3></div>
-    <div class="decor-card"><img src="/images/lotus-bud-backdrop.jpg"/><h3>Spiritual Vibes</h3></div>
-    <div class="decor-card"><img src="/images/lotus-petal-design.jpeg"/><h3>Spiritual Vibes</h3></div>
-    <div class="decor-card"><img src="/images/lotus.jpg"/><h3>Spiritual Vibes</h3></div>
-    </section>
+    <% if (typeof alldecorations !== 'undefined' && alldecorations.length > 0) { %>
+      <% for( let decoration of alldecorations ) { %>
+        <% if (decoration && decoration._id) { %>
+          <a href="/decorations/<%= decoration._id %>" class="decor-card-link">
+            <div class="decor-card">
+              <img src="<%= decoration.imageUrl %>" alt="<%= decoration.title %>"/>
+              <h3><%= decoration.title %></h3>
+            </div>
+          </a>
+        <% } %>
+      <% } %>
+    <% } else { %>
+      <p style="text-align: center; grid-column: 1 / -1; color: white;">No decorations to display at the moment. Please check back later!</p>
+    <% } %>
+  </section>
 
   
 

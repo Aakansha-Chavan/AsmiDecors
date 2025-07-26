@@ -39,9 +39,11 @@ async function main() {
 
 
 // --- Root route redirects to /home ---
-app.get('/', (req, res) => {
-    res.render('products/index.ejs');
-});
+app.get('/',catchAsync( async(req, res) => {
+    const alldecorations = await Decoration.find(); // Fetch all decorations from DB
+    console.log(alldecorations);
+    res.render('products/index.ejs',{ alldecorations });
+}));
 
 // --- Ignore favicon requests ---
 // Browsers automatically request this, and it can cause 404 errors in the log if not handled.

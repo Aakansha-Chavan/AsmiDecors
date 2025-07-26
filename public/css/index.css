@@ -163,12 +163,18 @@
 }
 .decor-card img {
   width: 100%;
-  height: 180px;
+  height: 280px;
   object-fit: cover;
 }
 .decor-card h3 {
   padding: 10px;
   font-size: 1.1rem;
+}
+
+.decor-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Ensures the whole card area is clickable */
 }
 
 /* 🧑‍🤝‍🧑 Team Section */
