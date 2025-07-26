@@ -66,6 +66,10 @@ body{
     justify-content: center;
 }
 
+.f-info-brand {
+    flex-direction: column;
+}
+
 .f-info-brand p{
     color: #eee;
 }
@@ -77,19 +81,29 @@ body{
     transition: transform 0.3s ease;
 }
 
+.dev-credits .dev-link {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dev-credits .dev-link:hover {
+    text-decoration: underline;
+}
+
 .f-info {
     text-align: center;
-    height: 12rem;
+    height: 13rem;
     background:linear-gradient(to right, #a05f2c, #e0b989);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-evenly;
-    gap:10px;
+    
 }
 
 .watermark {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -111,4 +125,3 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
-
